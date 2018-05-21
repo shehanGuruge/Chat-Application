@@ -37,22 +37,3 @@ CREATE TABLE messages (
 CREATE DATABASE chatapp;
 
 
-INSERT INTO userdetails
-VALUES('shehan','s2015297','W1628058','W1628058');
-
-INSERT INTO userdetails
-VALUES('John','jDiggles','jd789','jd789');
-
-
-INSERT INTO threads(threads.threadTitle,threads.lastEditedDate,threads.lastEditedTime,threads.createdBy)
-VALUES('CLIENT SERVER ARCHITECTURE CWK','2018-01-25','10:52:32','shehan guruge')
-
-INSERT INTO threads(threads.threadTitle,threads.lastEditedDate,threads.lastEditedTime,threads.createdBy)
-VALUES('Informatics Institute Of Technology','2018-03-02','19:02:52','john')
-
-INSERT INTO messages
-VALUES('Hello everyone I am Shehan','2018-02-25','7:02:03',(SELECT userdetails.logInId FROM userdetails WHERE userdetails.logInId = 'shehan'),(SELECT threads.threadId FROM threads WHERE threads.threadId = 1))
-
-
-INSERT INTO messages
-VALUES('Hello everyone I am John','2018-03-05','18:20:13',(SELECT userdetails.logInId FROM userdetails WHERE userdetails.logInId = 'John'),(SELECT threads.threadId FROM threads WHERE threads.threadId = 2))
