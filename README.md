@@ -2,6 +2,9 @@
 A basic chat application using web client and web server. This repository contains the code only for the web server. For the web client code visit to the web client repository
 
 All the user inputs are stored in a basic mysql database. The sql scripts are in this repository itself or can be copied from here,
+
+
+
 CREATE TABLE userdetails (
  logInId varchar(250) NOT NULL,
  nickName varchar(200) NOT NULL,
